@@ -202,7 +202,13 @@ gensrcs {
 // header files
 cc_library_static {
     name: "libwayland_extension_client_protocols",
+    min_sdk_version: "29",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
     vendor_available: true,
+    product_available: true,
     cflags: [
         "-Wall",
         "-Wextra",
@@ -220,7 +226,13 @@ cc_library_static {
 // header files
 cc_library_static {
     name: "libwayland_extension_server_protocols",
+    min_sdk_version: "29",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
     vendor_available: true,
+    product_available: true,
     host_supported: true,
     cflags: [
         "-Wall",
